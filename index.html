@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Software Developer Portfolio</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <style>
+        body {
+            background-color: #f8f8f8;
+            color: lightblue;
+            background-image: linear-gradient(to bottom right, fuchsia, navy);
+        }
+        .header {
+            border: solid;
+            border-radius: 20px;
+            border-color: lightblue;
+            background-color: navy;
+            margin-top: 20px;
+            margin-right: 100px;
+            margin-bottom: 10px;
+            margin-left: 100px;
+            text-shadow: -3px 3px rgba(0,0,0,.8);
+            color: #fff;
+            text-align: center;
+            padding: 50px;
+            margin-bottom: 30px;
+            
+        }
+        .header h1 {
+            font-size: 50px;
+            color: lightblue; 
+            text-transform: uppercase;
+            text-shadow: -3px 3px rgba(0,0,0,.8);
+        }
+        .card-transparent {
+            border: solid;
+            border-color: lightblue;
+            border-radius: 20px;
+            margin-bottom: 30px;
+            /*box-shadow: -2px 2px 10px #ccc;*/
+            box-shadow: -3px 3px 10px 2px rgba(0,0,0,.8);
+            text-shadow: -2px 2px rgba(0,0,0,.8);
+        }
+        .card-img-top {
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+            border-radius: 20px;
+            height: 300px;
+            object-fit: cover;
+            box-shadow: -6px 6px 10px 2px rgba(0,0,0,.8);
+        }
+        .card-body {
+            text-align: center;
+            color: lightblue;
+        }
+        .card-title {
+            font-size: 30px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .card-text {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .btn-transparent {
+            color: #fff;
+            border: solid;
+            border-color: lightblue;
+            border-radius: 10px;
+            padding: 10px 20px;
+            text-transform: uppercase;
+            font-size: 16px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            box-shadow: -3px 3px 10px 2px rgba(0,0,0,.8);
+        }
+        .btn:hover {
+            color: white;
+            border: 1px solid #333;
+        }
+        .card-link {
+            color: navy;
+            text-shadow: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Jesse Perkins</h1>
+    </div>
+    <span></span>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="card-transparent">
+                    <div class="card-body">
+                        <h5 class="card-title">About Me</h5>
+                        <p class="card-text">I am a junior at the University of Kentucky set to graduate in December 2023. I am persuing a Bachelor's degree in computer science. Outside of class, I am involved with the UK Solar Car team, where I work on embedded systems and dashboard UI for the car.  </p>
+                        <a href="./JessePerkinsResumeAwesome.pdf" class="card-link">My Resume</a>
+                        <a href="http://solarcar.engr.uky.edu/" class="card-link">UK Solar Car</a>
+                      </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-end">
+            <div class="col-12">
+                <div class="card-transparent">
+                    <div class="card-body">
+                        <h5 class="card-title">Academics</h5>
+                        <p class="card-text"> I currently have a 4.0 GPA and have been on the Dean's list for all 5 semesters that I have completed at UK so far. I have completed coursework in the following areas: Systems Programming, Algorithms/Data structures, Database Systems, Web Programming, Computer Networking, Computer Graphics, Web programming, Game Development, and Computer Architechture </p>
+                      </div>
+                </div>
+            </div>
+            <div class="col-1"></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+
+            <!-- Project 1 -->
+            <div class="col-md-4">
+                <div class="card-transparent" style="">
+                    <img class="card-img-top" src="./bomb.png" alt="Project 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Minesweeper</h5>
+                        <p class="card-text">A stand-alone C++ implementation of the game minesweeper utilizing the Qt framework. </p>
+                        <a href="https://github.com/perkinsj301/minesweeper" class="btn-transparent">View Project</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="col-md-4">
+                <div class="card-transparent">
+                    <img class="card-img-top" class="border" src="./avalanche_square.png" alt="Project 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Avalanche Climber</h5>
+                        <p class="card-text">A 3-dimensional obstacle-avoidance game built with the Unity game engine and Microsoft C#</p>
+                        <a href="https://www.youtube.com/watch?v=YUAz-ZVPKl0" class="btn-transparent">View Project</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="col-md-4">
+                <div class="card-transparent">
+                    <img class="card-img-top" src="./pythonSquare.png" alt="Project 3">
+                    <div class="card-body">
+                        <h5 class="card-title">File Sharing Service</h5>
+                        <p class="card-text">Implemented a local file sharing service with Python utilizing peer-to-peer networking</p>
+                        <a href="https://github.com/perkinsj301/CS371-project-version" class="btn-transparent">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
